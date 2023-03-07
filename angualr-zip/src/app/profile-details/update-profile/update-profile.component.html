@@ -1,0 +1,56 @@
+<h1 mat-dialog-title>Update Profile</h1>
+<div mat-dialog-content>
+    <form class="example-form" [formGroup]="generateUpdateForm">
+        <div class="row">
+
+        <mat-form-field class="example-full-width col-6" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Enter your Name" formControlName="name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width col-6" appearance="fill">
+            <mat-label>Domain</mat-label>
+            <input matInput placeholder="Enter Domain" formControlName="domain">
+        </mat-form-field>
+    </div>
+
+        <div class="row">
+
+        <mat-radio-group aria-label="Select an option" class="col-6" formControlName="gender">
+            <mat-label>Gender</mat-label>
+            <mat-radio-button value="male" checked>Male</mat-radio-button>
+            <mat-radio-button value="female" >Female</mat-radio-button>
+        </mat-radio-group>
+
+        <mat-form-field appearance="fill" class="col-6">
+            <mat-label>DOB</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="dateOfBirth">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+
+<div>
+
+        <mat-form-field class="example-full-width" class="col-6" appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput type="number" formControlName="phoneNumber" placeholder="Enter 10 digit Phone NO."
+                value="Sushi">
+        </mat-form-field>
+</div>
+<div>
+
+        <mat-form-field class="example-full-width" class="col" appearance="fill">
+            <mat-label>Location</mat-label>
+            <textarea matInput placeholder="Enter your Location" formControlName="location"></textarea>
+        </mat-form-field>
+</div>
+
+
+        <div class="d-flex justify-content-center">
+            <button mat-raised-button color="primary"mat-dialog-close="true" (click)="onSubmit()"  >Submit</button>
+        </div>
+
+    </form>
+   
+</div>

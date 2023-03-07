@@ -1,0 +1,142 @@
+/* You can add global styles to this file, and also import other style files */
+nav {
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+        0 5px 15px 0 rgba(37, 44, 97, 0.15);
+
+    .container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-inline: auto;
+
+        .logo >img{
+            width: 90px;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+        }
+
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+            font-size: 18px;
+            font-weight: lighter;
+            li {
+                display: flex;
+                gap: 0.05rem;
+            }
+        }
+
+        .profile-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            object-fit: cover;
+
+            .btn-invite {
+                width: 89px;
+                background: red;
+                color: #fff;
+                letter-spacing: 0.05em;
+                padding: 5px;
+                border: none;
+                border-radius: 5px;
+             
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.profile-details {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    .profile-card {
+        width: 300px;
+        box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+            0 5px 15px 0 rgba(37, 44, 97, 0.15);
+        padding: 1rem;
+    }
+
+    .details {
+        display: grid;
+        place-items: center;
+        margin-bottom: 1rem;
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .text-align {
+            text-align: center;
+        }
+
+        .text-align>p,
+        h1 {
+            margin-block: 0.05em;
+        }
+    }
+
+    .send-btn {
+        text-align: center;
+
+        p {
+            color: red;
+            i{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.card {
+    height: 350px;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+            0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    .edit-btn{
+        margin-right: 1rem;
+    }
+}
+
+h5 {
+    background-color: rgb(244 246 221);
+    padding: 10px;
+    padding-left: 1.5rem;
+}
+
+.wrapper {
+    list-style: none;
+    padding: 20px;
+
+    hr {
+        margin-top: -1.2rem;
+        width: 96%;
+        margin-inline: auto;
+        opacity: 0.1;
+    }
+
+}
+
+.profile-icon {
+
+    i{
+    font-size: 24px;
+    color: grey;
+    }
+}
